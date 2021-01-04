@@ -33,7 +33,7 @@ public class Job1Tesklets  implements Tasklet {
                 }
             }
         }
-        FileSystemResource fileSystemResource = new FileSystemResource("rohit.csv");
+        FileSystemResource fileSystemResource = new FileSystemResource("src/main/resources/batch_one_output.csv");
         try {
             FileWriter outputfile = new FileWriter(fileSystemResource.getFile());
             CSVWriter writer = new CSVWriter(outputfile);
