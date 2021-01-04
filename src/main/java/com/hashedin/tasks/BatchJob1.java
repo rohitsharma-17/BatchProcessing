@@ -1,4 +1,4 @@
-package com.hashedin.services;
+package com.hashedin.tasks;
 
 import com.hashedin.tasklets.Job1Tesklets;
 import org.springframework.batch.core.Job;

@@ -18,10 +18,11 @@ public class Job1Tesklets  implements Tasklet {
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
         String input = chunkContext.getStepContext().getJobParameters().get("input").toString();
+//        String input = "rohit";
         char str[] = input.toCharArray();
 
         String[][] arr = new String[input.length()][input.length()];
-        for (int row = 0; row < 1; row++){
+        for (int row = 0; row < arr.length; row++){
             if(row < 1){
                 for (int col = 0; col < arr[row].length; col++){
                     arr[row][col] = str[col]+"";
