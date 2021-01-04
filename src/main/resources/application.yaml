@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/split_bill
+    username: hasher
+    password: password@128
+  jpa:
+    database: MySQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+#Batch Configuration
+  batch:
+    initializee-schema: always
+#      enabled: false
+    job:
+      enabled: false
